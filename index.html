@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="css/style.css">
+	<scrpt src ="js/lib/modernizer-2.6.2.js"></script>
+	</head>
+	<body>
+	<script type="text/javascript" src="js/lib/underscore.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/backbone.js"></script>
+	<script type="text/javascript" src="js/lib/mustache.js"></script>
+	<script type="text/javascript" src="js/models/todoItem.js"></script>
+	<script type="text/javascript" src="js/collection/todoItems.js"></script>
+	<script type="text/javascript" src="js/views/todoItemView.js"></script>
+	<script type="text/javascript" src="js/views/todoItemsView.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/html" id="newTodoItem">
+		<label>
+		 <input id="toggle" type="checkbox" {{#completed}}checked{{/completed}}>
+			{{title}}
+		 </input>
+		</label>
+		<button id="delete">Delete</button>
+	</script>
+	<script type="text/html" id="newTodoItems">
+		<input autofocus id="addNewTodoItems"></input>
+		<button id="add">Add</button>
+		<ul id="todoItems"></ul>
+
+	</script>
+	</body>
+</html>

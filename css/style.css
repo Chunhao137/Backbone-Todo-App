@@ -1,0 +1,36 @@
+#todoItems  li.completed > label {
+	text-decoration: line-through;
+}
+
+#todoItems >li{
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding:10px;
+}
+
+#todoItemContainer{
+	width:800px;
+	margin: 0 auto;
+}
+
+#todoItems{
+	margin: 0;
+	padding: 0;
+	border-top:1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+#todoItems > li > #delete{
+	float:right;
+	border-radius: 7px;
+	background: red;
+	font-size: 14px;
+}
+
+#addNewTodoItems{
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 10px;
+}
